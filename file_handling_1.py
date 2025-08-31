@@ -20,11 +20,9 @@ def read_numbers():
     print("Media:", sum(numbers) / len(numbers) if numbers else 0)
     f.close()
 
-def main():
+if __name__ == '__main__':
     input_numbers = input("Give me some numbers, when you're done, just press enter.\n")
     write_numbers(input_numbers)
     read_numbers()
 
-if __name__ == "__main__":
-    main()
 
